@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 100px
+        }
+        
+        body {
+            font-size: 0.16rem
+        }
+        
+        .slide-img {
+            width: 100%;
+        }
+        
+        img {
+            position: absolute;
+            width: 100%;
+            transition: all 2s ease;
+        }
+        /* img:nth-of-type(3) {
+            z-index: 10; */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="slide-img">
+        <img src="images/img/1.jpg" alt="">
+        <img src="images/img/2.jpg" alt="">
+        <img src="images/img/3.jpg" alt="">
+        <img src="images/img/4.jpg" alt="">
+        <img src="images/img/5.jpg" alt="">
+        <img src="images/img/6.jpg" alt="">
+        <img src="images/img/7.jpg" alt="">
+        <img src="images/img/8.jpg" alt="">
+    </div>
+</body>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    width = window.screen.width;
+
+    var img = document.querySelector(".slide-img").children;
+    for (var i = 0; i < img.length; i++) {
+        img[i].style.left = width * i + "px";
+    }
+
+    index = 0;
+    setInterval(() => {
+        width = window.screen.width;
+        if (index == 7) {
+            index = 0;
+            for (var i = 0; i < img.length; i++) {
+                img[i].style.left = width * i + "px";
+            }
+        }
+        img[index].style.left = -width + "px";
+        img[index + 1].style.left = 0 + "px";
+        index++;
+    }, 2000)
+</script>
+
+</html>

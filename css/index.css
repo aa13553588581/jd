@@ -1,0 +1,398 @@
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 0.16rem;
+}
+
+
+/* 头部搜索框 */
+
+#search_bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0.44rem;
+    padding: 0.05rem 0.1rem;
+    display: flex;
+    line-height: 0.44rem;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.search-inner {
+    flex: 8;
+    display: inline-block;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    /* padding: 0.08rem */
+    line-height: 0.44rem;
+    background: white;
+    margin-left: 0.1rem;
+}
+
+.icon {
+    float: left;
+    padding-top: 0.06rem;
+    padding-left: 0.08rem;
+}
+
+.icon-jd {
+    background: url('../images/img/buy-logo.png') no-repeat;
+    background-size: 0.235rem 0.235rem;
+    width: 0.235rem;
+    height: 0.235rem;
+    display: inline-block;
+}
+
+.icon-search {
+    background: url('../images/img/sprites.png') -0.58rem -1.07rem no-repeat;
+    background-size: 2rem 2rem;
+    width: 0.235rem;
+    height: 0.235rem;
+    display: inline-block;
+}
+
+.search-inner a {
+    padding-left: 0.2rem;
+    color: #cccccc;
+}
+
+.search-inner a:hover {
+    text-decoration: none;
+}
+
+.register {
+    flex: 2;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 0.1rem;
+}
+
+.register:hover {
+    color: red
+}
+
+
+/* 轮播图 */
+
+.slide {
+    position: relative;
+    width: 100%;
+    padding-bottom: 48.61%;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.slide .slide-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid blue;
+    width: 100%;
+}
+
+.slide .slide-img img {
+    /* /* position: absolute; */
+    width: 100%;
+    /* left: 0;
+    top: 0;
+    transition: all 1s ease-in; */
+    display: inline-block;
+}
+
+.slide .slide-indicator {
+    position: absolute;
+    bottom: 0.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.slide .slide-indicator li {
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.slide .slide-indicator li.active {
+    background: white;
+}
+
+
+/* 分类 */
+
+#icoc-nav {
+    width: 100%;
+    background: rgb(251, 251, 251);
+    border-bottom: 1px solid #999999;
+}
+
+.classify {
+    margin: 0.1rem 0.2rem 0 0.2rem;
+}
+
+.classify li {
+    display: inline-block;
+    width: 23.85%;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+.classify li img {
+    width: 0.44rem;
+    height: 0.44rem;
+}
+
+
+/*  */
+
+.advertising {
+    width: 100%;
+}
+
+.advertising img {
+    width: 100%;
+}
+
+
+/*  掌上秒杀*/
+
+.Handheld {
+    border: 1px solid #ccc;
+    margin: 0.08rem;
+}
+
+.Handheld p {
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+
+.Handheld p img {
+    width: 0.2rem;
+    height: 0.25rem;
+    vertical-align: middle;
+    padding-bottom: 0.05rem;
+}
+
+.Handheld p em {
+    color: red;
+    margin-right: 0.2rem;
+}
+
+.Handheld p em:last-child {
+    margin-right: 0rem;
+    margin-left: 0.6rem;
+    font-size: 0.12rem;
+}
+
+.Handheld li {
+    width: 23.93%;
+    display: inline-block;
+    text-align: center;
+}
+
+.Handheld li img {
+    width: 100%;
+}
+
+.Handheld li a em {
+    color: red;
+}
+
+.Handheld li a span {
+    text-decoration: line-through;
+    color: #999999;
+}
+
+
+/* 爱生活 */
+
+.love-life {
+    width: 100%;
+}
+
+.love-life-images img {
+    width: 100%;
+}
+
+.love-life-content {
+    border: 1px solid #ccc;
+    margin: 0.08rem;
+    height: 2.1rem;
+}
+
+.love-life-content li {
+    width: 49.7%;
+    float: left;
+}
+
+.love-life-content li:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.love-life-content li:nth-of-type(2) {
+    border-bottom: 1px solid #ccc;
+}
+
+.love-life-content li img {
+    width: 100%;
+}
+
+
+/* 为您推荐 */
+
+.recommend>p {
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.recommend .img-top {
+    vertical-align: middle;
+    height: 0.21rem;
+    width: 0.21rem;
+    background: url("../images/icon/upload.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+
+.recommend li {
+    display: inline-block;
+    width: 48.8%;
+    border: 1px solid #ccc;
+    margin-bottom: 0.05rem;
+    background: rgb(236, 236, 241);
+}
+
+.recommend li p {
+    font-size: 0.12rem;
+    margin: 0 0.05rem;
+    line-height: 0.2rem;
+}
+
+.recommend li p:nth-of-type(2) {
+    margin: 0.1rem 0;
+    color: red;
+    font-weight: bold;
+    margin: 0 0.05rem;
+}
+
+#aaa li>p {
+    padding-bottom: 0.1rem;
+    color: #cccccc;
+}
+
+#aaa li>p span {
+    display: inline-block;
+    margin-left: 0.4rem;
+    border: 1px solid #ccc;
+    padding: 0 0.1rem;
+    color: #000;
+    border-radius: 0.05rem;
+}
+
+.recommend li img {
+    width: 100%;
+}
+
+
+/* 底部 */
+
+.footer-bar {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 0.4rem;
+    background: rgb(236, 236, 241);
+}
+
+.footer-bar span {
+    display: inline-block;
+    color: #ccc;
+}
+
+.footer-bar span a {
+    color: #ccc;
+}
+
+.footer-bar .text {
+    width: 21.5%;
+    text-align: center;
+}
+
+.footer-icon {
+    padding: 0.1rem 0;
+    border-bottom: 1px solid #ccc;
+    background: rgb(236, 236, 241);
+}
+
+.footer-icon span {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.footer-icon span i {
+    width: 0.335rem;
+    height: 0.335rem;
+    margin: auto;
+    display: block;
+    background: url("../images/icon/sprites.png")no-repeat;
+    background-size: 2rem 2rem;
+}
+
+.footer-icon span:nth-of-type(1) i {
+    background-position: -1.2rem -0.7rem;
+}
+
+.footer-icon span:nth-of-type(2) i {
+    background-position: -0.395rem -0.7rem;
+}
+
+.footer-icon span:nth-of-type(3) i {
+    background-position: -0.8rem -0.7rem;
+}
+
+.footer-icon span p {
+    margin-top: 0.05rem;
+}
+
+footer>p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    background: rgb(236, 236, 241);
+}
+
+.footer-nav-bar {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-nav-bar li {
+    float: left;
+    width: 20%;
+    color: white;
+}
+
+.footer-nav-bar li img {
+    width: 100%;
+}
+
+.fixed-top {
+    position: fixed;
+    bottom: 0.7rem;
+    right: 0.2rem;
+}
